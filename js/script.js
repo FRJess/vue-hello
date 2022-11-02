@@ -18,10 +18,10 @@ createApp({
   },
 
   methods: {
-    dynamicTitle(style){
+    dynamicStyle(style){
       console.log('cambio stile')
       this.styleClasse = style;
-    },
+    }
   }
 
 }).mount('#app')
