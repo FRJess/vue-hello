@@ -13,7 +13,15 @@ createApp({
   data(){
     return {
       firstMessage: "Questo è il mio primo esercizio con Vue",
+      styleClasse: '',
     }
   },
+
+  methods: {
+    dynamicTitle(style){
+      console.log('cambio stile')
+      this.styleClasse = style;
+    },
+  }
 
 }).mount('#app')
