@@ -1,3 +1,5 @@
-// VARIABLES DECLARATION AND INIZIALIZATION
+const { createApp} = Vue;
 
-// FUNCTIONS
+createApp({
+  
+})
