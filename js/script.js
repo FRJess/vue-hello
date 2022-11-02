@@ -14,6 +14,8 @@ createApp({
     return {
       firstMessage: "Questo è il mio primo esercizio con Vue",
       styleClasse: '',
+      imageName: 'img/vue-logo.png',
+      newImageName: 'img/help.png',
     }
   },
 
@@ -21,6 +23,10 @@ createApp({
     dynamicStyle(style){
       console.log('cambio stile')
       this.styleClasse = style;
+    },
+
+    changeImage(newImageName){
+      this.imageName = newImageName
     }
   }
 
