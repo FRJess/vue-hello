@@ -26,7 +26,9 @@
     <button @click="dynamicStyle('title')" class="btn btn-dark m-2">Cambiamo stile</button><br>
 
     <button @click="changeImage('img/help.png')" class="btn btn-dark m-2">Cambiamo immagine</button><br>
-    <img :src="imageName" alt=""><br>
+    <p v-show="isTextShow" class="m-2">Dov'è andata l'immagine?</p>
+    <img v-show="imageShow" :src="imageName" alt=""><br>
+    <button @click="showText(true), showImage(false)" class="btn btn-dark m-2">Sostituisci l'immagine con un testo</button><br>
   </div>
 
   <!-- JS -->

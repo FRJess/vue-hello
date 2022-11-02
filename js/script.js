@@ -15,7 +15,9 @@ createApp({
       firstMessage: "Questo è il mio primo esercizio con Vue",
       styleClasse: '',
       imageName: 'img/vue-logo.png',
-      newImageName: 'img/help.png',
+      text: "Dov'è andata l'immagine?",
+      isTextShow: false,
+      imageShow: true,
     }
   },
 
@@ -27,6 +29,11 @@ createApp({
 
     changeImage(newImageName){
       this.imageName = newImageName
+    },
+
+    showText(showText, showImage){
+      this.isTextShow = showText;
+      this.imageShow = showImage;
     }
   }
 
